@@ -11,11 +11,11 @@
 
 **Explain the design pattern used in following:**
 
-interface Vehicle {
+`interface Vehicle {
 int set_num_of_wheels()
 int set_num_of_passengers()
 boolean has_gas() 
-}
+}`
 **Ans:** 
 It is interface, not a specific pattern. The interface can be used in a design pattern however, such as the Factory Pattern, Builder, or Adapter Pattern, etc.
 
