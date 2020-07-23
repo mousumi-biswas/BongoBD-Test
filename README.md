@@ -11,19 +11,24 @@
 
 **Explain the design pattern used in following:**
 
-`interface Vehicle {
+interface Vehicle {
 int set_num_of_wheels()
 int set_num_of_passengers()
 boolean has_gas() 
-}`
+}
+
+
 **Ans:** 
+
 It is interface, not a specific pattern. The interface can be used in a design pattern however, such as the Factory Pattern, Builder, or Adapter Pattern, etc.
 
 **Explain how can you use the pattern to create car and plane class?**
 
 **Ans:**
+
 To create a "Car" or "Plane", you would simply implement the interface in a concrete class, and return the appropriate values for each function. If a factory pattern, the factory would simply return an implementation of some sort that implemented that interface.
 
+      
       class VehicleFactory {
         public Vehicle create(int type) {
             if(type == 0){ 
@@ -47,6 +52,7 @@ To create a "Car" or "Plane", you would simply implement the interface in a conc
 
 
 **Use a different design pattern for this solution**
+
     Using Builder Pattern:
     class VehicleBuilder {
          int num_of_wheels = 0;
@@ -78,6 +84,7 @@ To create a "Car" or "Plane", you would simply implement the interface in a conc
       int set_num_of_passengers() {return passengers}
       boolean has_gas() {return gas}
    }
+   
   ## Problem Video Player:
   
   [CodeSnippet](https://github.com/mousumi-biswas/BongoBD-Test/tree/master/video-player)
